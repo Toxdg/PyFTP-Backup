@@ -1,0 +1,46 @@
+# ==========================================
+# 1. Poufne pliki konfiguracyjne (KRYTYCZNE)
+# ==========================================
+config.json
+smtp.json
+
+# ==========================================
+# 2. Pliki stanu, cache i pobrane kopie
+# ==========================================
+.backup_cache.json
+**/.backup_cache.json
+backups/
+downloads/
+
+# ==========================================
+# 3. Logi i raporty
+# ==========================================
+logs/
+*.log
+
+# ==========================================
+# 4. Pliki środowiska Pythona
+# ==========================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Środowiska wirtualne
+venv/
+.venv/
+env/
+ENV/
+
+# ==========================================
+# 5. Pliki edytorów i systemowe
+# ==========================================
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# macOS / Windows
+.DS_Store
+Thumbs.db
+desktop.ini

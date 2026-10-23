@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Production_WP",
+    "host": "ftp.example.com",
+    "username": "ftp_user",
+    "password": "your_secure_password_here",
+    "tls": true,
+    "threads": 4,
+    "remote_path": "/public_html/wp-content",
+    "local_path": "/var/backups/production_wp/wp-content",
+    "exclude": [
+      "*updraft*",
+      "*ai1wm-backups*",
+      "*cache*",
+      "*languages*",
+      "*upgrade*",
+      "*wflogs*",
+      "*.log",
+      "*.tmp"
+    ]
+  },
+  {
+    "name": "Staging_App",
+    "host": "192.168.1.50",
+    "username": "backup_agent",
+    "password": "another_secure_password",
+    "tls": false,
+    "threads": 2,
+    "remote_path": "/var/www/html",
+    "local_path": "/mnt/storage/backups/staging_app",
+    "exclude": [
+      "*cache*",
+      "node_modules",
+      ".git",
+      "*.tar.gz"
+    ]
+  }
+]

@@ -1,0 +1,7 @@
+{
+  "host": "smtp.example.com",
+  "port": 587,
+  "user": "notifications@example.com",
+  "password": "your_app_specific_password_here",
+  "to": "admin@example.com"
+}
